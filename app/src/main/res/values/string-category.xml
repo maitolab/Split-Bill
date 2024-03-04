@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="category_trip">Trip</string>
+    <string name="category_couple">Couple</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_food">Food</string>
+    <string name="category_sports">Sports</string>
+    <string name="category_games">Games</string>
+    <string name="category_kids">Kids</string>
+    <string name="category_others">Others</string>
+
+</resources>

@@ -1,0 +1,39 @@
+package com.solid.app.data.entity
+
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import com.solid.app.domain.Currency
+import java.time.LocalDateTime
+
+@Entity(tableName = "table_transaction")
+data class EntityTransaction(
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
+    val id: Long = 0,
+
+    @ColumnInfo(name = "group_id")
+    val groupId: Long,
+
+    @ColumnInfo(name = "from_user_id")
+    val fromUserId: Long,
+
+    @ColumnInfo(name = "to_user_id")
+    val toUserId: Long,
+
+    @ColumnInfo(name = "currency")
+    val currency: Currency,
+
+    @ColumnInfo(name = "cost")
+    val cost: Double,
+
+    @ColumnInfo(name = "created_at")
+    val createAt: LocalDateTime = LocalDateTime.now(),
+
+    @ColumnInfo(name = "modified_at")
+    val modifiedAt: LocalDateTime = LocalDateTime.now(),
+
+    @ColumnInfo(name = "deleted_at")
+    val deleteAt: LocalDateTime = LocalDateTime.MIN
+
+)
